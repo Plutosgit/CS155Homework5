@@ -1,0 +1,19 @@
+﻿<Window x:Class="CS155Homework5Part1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS155Homework5Part1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="canvasMain">
+        <Label Content="BMI Calculator" HorizontalAlignment="Left" Height="33" Margin="290,63,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Enter Weight (in lbs)" HorizontalAlignment="Left" Height="24" Margin="167,134,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Enter Height (in inches)" HorizontalAlignment="Left" Height="24" Margin="167,193,0,0" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Center" Height="32" Margin="0,130,0,0" Text="Weight(lbs)" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" GotFocus="txtWeight_GotFocus" TextChanged="txtWeight_TextChanged"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Center" Height="29" Margin="0,189,0,0" Text="Height(in)" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" GotFocus="txtHeight_GotFocus" TextChanged="txtHeight_TextChanged"/>
+        <Button x:Name="cmdCalcBMI" Content="Calculate BMI" HorizontalAlignment="Left" Height="42" Margin="218,263,0,0" VerticalAlignment="Top" Width="215" IsDefault="True" Click="cmdCalcBMI_OnClick"/>
+        <Label x:Name="lblBMIOutput" Content="BMI Output:" HorizontalAlignment="Left" Height="34" Margin="167,345,0,0" VerticalAlignment="Top" Width="305"/>
+
+    </Grid>
+</Window>
